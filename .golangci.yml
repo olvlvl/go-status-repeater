@@ -1,0 +1,37 @@
+run:
+  timeout: 5m
+  deadline: 5m
+linters:
+  enable:
+  - bodyclose
+  - dupl
+  - errcheck
+  - goconst
+  - gocritic
+  - gocyclo
+  - gofmt
+  - goimports
+  - golint
+  - godot
+  - godox
+  - gofumpt
+  - gomnd
+  - gosimple
+  - govet
+  - ineffassign
+  - interfacer
+  - nlreturn
+  - prealloc
+  - unparam
+  - varcheck
+  - wsl
+  fast: false
+linters-settings:
+  gofmt:
+    simplify: false
+  testpackage:
+    skip-regexp: ".*"
+  gocyclo:
+    min-complexity: 15
+issues:
+  exclude-use-default: false
