@@ -1,5 +1,8 @@
 # statusrepeater
 
+[![Build Status](https://img.shields.io/github/workflow/status/olvlvl/go-status-repeater/test)](https://github.com/olvlvl/go-status-repeater/actions?query=workflow%3Atest)
+[![Coverage Status](https://coveralls.io/repos/github/olvlvl/go-status-repeater/badge.svg?branch=main)](https://coveralls.io/github/olvlvl/go-status-repeater?branch=main)
+
 A middleware that repeats the status code of a matching request without processing the request again.
 
 The middleware can be useful when indelicate clients keep querying your API for resources that don't exist. After the
